@@ -1,0 +1,140 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background: hsl(0, 0%, 95%);
+}
+
+.coluna1 {
+    background: hsl(31, 77%, 52%);
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    bottom: 170px;
+    left: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.coluna2 {
+    background: hsl(184, 100%, 22%);
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    bottom: 170px;
+    left: 560px;
+}
+
+.coluna3 {
+    background: hsl(179, 100%, 13%);
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    bottom: 170px;
+    left: 820px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carro1, .carro2, .carro3 {
+    position: absolute;
+    bottom: 330px;
+    left: 30px;
+}
+
+.car{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+    bottom: 238px;
+    left: 31px;
+}
+
+.car1_2{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    position: absolute;
+    bottom: 120px;
+    font-size: 15px;
+    left: 30px;
+}
+
+.botao {
+    background: #fff;
+    height: 43px;
+    width: 150px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.lerMais {
+    color: hsl(31, 77%, 52%);
+    font-family: "Open sans";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: -3px;
+    left: 35px;
+}
+
+.lerMais2 {
+    color: hsl(184, 100%, 22%);
+    font-family: "Open sans";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: -3px;
+    left: 35px;
+}
+
+.lerMais3 {
+    color: hsl(179, 100%, 13%);
+    font-family: "Open sans";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: -3px;
+    left: 35px;
+}
+
+@media(max-width:375px){
+    .coluna1 {
+        background: hsl(31, 77%, 52%);
+        height: 420px;
+        width: 260px;
+        position: absolute;
+        left: 65px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0%;
+
+        & + .coluna2  {
+            background: hsl(184, 100%, 22%);
+            height: 420px;
+            width: 260px;
+            position: absolute;
+            bottom: -280px;
+            left: 65px;
+
+            & + .coluna3 {
+                background: hsl(179, 100%, 13%);
+                height: 420px;
+                width: 260px;
+                position: absolute;
+                bottom: -700px;
+                left: 65px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 0%;
+            }
+        }
+    }
+}
